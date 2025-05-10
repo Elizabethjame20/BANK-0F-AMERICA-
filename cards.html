@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cards - Bank 0f Amecans</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #002244;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #fff;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card-box {
+      background-color: #161b22;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-type {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card-number {
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    .balance {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #4ade80;
+    }
+
+    .actions {
+      margin-top: 15px;
+    }
+
+    .actions button {
+      margin-right: 10px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0366d6;
+      color: white;
+      cursor: pointer;
+    }
+
+    .actions button:hover {
+      background-color: #024fa2;
+    }
+
+    h2 {
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #333;
+      text-align: left;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 15px;
+      background-color: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-link:hover {
+      background-color: #024fa2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bank 0f Amecans</h1>
+  </header>
+
+  <div class="container">
+    <h2>Your Cards</h2>
+
+    <div class="card-box">
+      <div class="card-type">Visa Platinum</div>
+      <div class="card-number">**** **** **** 5621</div>
+      <div class="balance">Balance: $1,250.00</div>
+      <div class="actions">
+        <button>Freeze Card</button>
+        <button>Set Limit</button>
+        <button>View Statements</button>
+      </div>
+    </div>
+
+    <div class="card-box">
+      <div class="card-type">MasterCard Rewards</div>
+      <div class="card-number">**** **** **** 9834</div>
+      <div class="balance">Available Credit: $3,500.00</div>
+      <div class="actions">
+        <button>Freeze Card</button>
+        <button>Set Limit</button>
+        <button>Report Lost</button>
+      </div>
+    </div>
+
+    <h2>Recent Card Transactions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-05-10</td>
+          <td>Amazon Purchase</td>
+          <td>-$45.99</td>
+        </tr>
+        <tr>
+          <td>2025-05-08</td>
+          <td>Uber Ride</td>
+          <td>-$18.00</td>
+        </tr>
+        <tr>
+          <td>2025-05-06</td>
+          <td>POS Grocery</td>
+          <td>-$62.45</td>
+        </tr>
+        <tr>
+          <td>2025-05-03</td>
+          <td>Card Refund</td>
+          <td>+$25.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
