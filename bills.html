@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bills - Bank 0f Amecans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #002f6c;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h2 {
+      color: #fff;
+      padding: 15px;
+      font-size: 24px;
+    }
+    section {
+      padding: 15px;
+    }
+    .card {
+      background: #1c1c1c;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #66b3ff;
+    }
+    .btn {
+      padding: 10px 15px;
+      margin: 10px 5px 0 0;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #ccc;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border-bottom: 1px solid #333;
+    }
+    .back {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>Bank 0f Amecans</div>
+</header>
+
+<h2>Your Bills</h2>
+
+<section>
+  <div class="card">
+    <h3>Scheduled Payments</h3>
+    <p><strong>Electric Company</strong><br/>$120.00 – Scheduled for 2025-05-12</p>
+    <p><strong>Internet Service</strong><br/>$65.00 – Scheduled for 2025-05-15</p>
+  </div>
+
+  <div class="card">
+    <h3>Payment History</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Biller</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-05-01</td>
+          <td>Water Utility</td>
+          <td>$85.00</td>
+        </tr>
+        <tr>
+          <td>2025-04-25</td>
+          <td>Cable TV</td>
+          <td>$49.99</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>Quick Actions</h3>
+    <button class="btn">Pay Now</button>
+    <button class="btn">Add Biller</button>
+    <button class="btn">View All Payments</button>
+  </div>
+
+  <a href="dashboard.html" class="back">← Back to Dashboard</a>
+</section>
+
+</body>
+</html>
