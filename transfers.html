@@ -56,11 +56,10 @@
       font-weight: bold;
       cursor: pointer;
     }
-    .success {
+    .error {
+      color: #ff5555;
       text-align: center;
-      margin-top: 20px;
-      color: #2ecc71;
-      display: none;
+      margin-top: 15px;
     }
     a {
       display: block;
@@ -90,21 +89,33 @@
     <label for="amount">Amount:</label>
     <input type="number" id="amount" placeholder="Enter amount in USD" />
 
+    <label for="passcode">Enter Passcode:</label>
+    <input type="password" id="passcode" placeholder="Enter Passcode" />
+
     <button onclick="submitTransfer()">Submit Transfer</button>
 
-    <div class="success" id="successMsg">Transfer Successful!</div>
+    <div class="error" id="errorMsg"></div>
 
     <a href="dashboard.html">← Back to Dashboard</a>
   </div>
 
   <script>
     function submitTransfer() {
-      const amount = document.getElementById('amount').value;
-      if (amount && amount > 0) {
-        document.getElementById('successMsg').style.display = 'block';
-      } else {
-        alert("Please enter a valid amount.");
+      const amount = document.getElementById("amount").value;
+      const passcode = document.getElementById("passcode").value;
+      const errorMsg = document.getElementById("errorMsg");
+
+      if (!amount || amount <= 0) {
+        errorMsg.textContent = "Please enter a valid amount.";
+        return;
       }
+
+      if (passcode !== "Willian456") {
+        errorMsg.textContent = "Incorrect passcode.";
+        return;
+      }
+
+      window.location.href = "transfer-success.html";
     }
   </script>
 </body>
