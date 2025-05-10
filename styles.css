@@ -1,0 +1,47 @@
+
+body {
+  margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff;
+}
+header {
+  background: #011e41; color: #fff; display: flex; justify-content: space-between;
+  align-items: center; padding: 15px 20px; font-weight: bold;
+}
+.login-body { background: #111; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-container {
+  background: #1a1a1a; padding: 30px; border-radius: 8px; width: 90%; max-width: 350px; text-align: center;
+}
+.login-container h2 { margin-bottom: 20px; }
+.login-container input {
+  width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none;
+}
+.login-container button {
+  width: 100%; padding: 10px; background: #d50000; border: none; color: #fff; border-radius: 5px; margin-top: 10px;
+}
+.login-container a { color: #ccc; font-size: 14px; display: block; margin-top: 15px; }
+.remember { text-align: left; font-size: 14px; color: #aaa; }
+.greeting {
+  text-align: center; font-size: 20px; margin: 20px 0;
+}
+.balance-box {
+  background: #222; margin: 10px auto; padding: 20px; border-radius: 8px; text-align: center;
+  max-width: 500px;
+}
+.label { font-size: 16px; color: #ccc; }
+.amount { font-size: 28px; color: #4fc3f7; margin: 10px 0; }
+.account { font-size: 14px; color: #bbb; }
+.actions {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+  max-width: 500px; margin: 20px auto;
+}
+.actions button {
+  background: #014f86; color: #fff; padding: 12px; border: none;
+  border-radius: 6px; font-size: 16px;
+}
+.transactions {
+  max-width: 500px; margin: 30px auto; background: #1a1a1a; padding: 20px; border-radius: 8px;
+}
+.transactions h3 { margin-bottom: 10px; }
+.transactions table { width: 100%; border-collapse: collapse; color: #eee; }
+.transactions th, .transactions td { padding: 10px; border-bottom: 1px solid #444; text-align: left; }
+.debit { color: #f44336; }
+.credit { color: #4caf50; }
