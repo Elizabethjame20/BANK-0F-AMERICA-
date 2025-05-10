@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Settings - Bank 0f Amecans</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #fff;
+    }
+    .header {
+      background-color: #00274d;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #161b22;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #58a6ff;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #0d1117;
+      color: #fff;
+      border: 1px solid #30363d;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #1d9bf0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #1480cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">Bank 0f Amecans - Profile Settings</div>
+  <div class="container">
+    <form>
+      <div class="section">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" /><label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="john@example.com" />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="+1 (555) 123-4567" />
+
+    <label for="address">Street Address</label>
+    <input type="text" id="address" placeholder="123 Main St" />
+
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="Los Angeles" />
+
+    <label for="state">State</label>
+    <input type="text" id="state" placeholder="CA" />
+
+    <label for="zip">ZIP Code</label>
+    <input type="text" id="zip" placeholder="90001" />
+  </div>
+
+  <div class="section">
+    <h2>Security Settings</h2>
+    <label for="password">Change Password</label>
+    <input type="password" id="password" placeholder="Enter new password" />
+
+    <label for="2fa">2-Factor Authentication</label>
+    <select id="2fa">
+      <option>Enabled</option>
+      <option>Disabled</option>
+    </select>
+  </div>
+
+  <div class="section">
+    <h2>Contact Preferences</h2>
+    <label for="alerts">Email Alerts</label>
+    <select id="alerts">
+      <option>Enabled</option>
+      <option>Disabled</option>
+    </select>
+
+    <label for="sms">SMS Alerts</label>
+    <select id="sms">
+      <option>Enabled</option>
+      <option>Disabled</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn">Save Settings</button>
+</form>
+
+  </div>
+</body>
+</html>
